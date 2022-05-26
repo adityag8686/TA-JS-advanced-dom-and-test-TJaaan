@@ -18,8 +18,8 @@ document.addEventListener(`DOMContentLoaded`, ()=>{
 
 window.addEventListener("scroll", () =>{
     const scrollable = document.documentElement.scrollHeight;
-    
-    if (scrollable <= 990){
+    console.log(scrollable);
+    if (scrollable <= 970){
         quotes.forEach((elm) =>{
             let h2 = document.createElement("h2");
             h2.innerText = elm.quoteText;
